@@ -3,13 +3,42 @@
 @tailwind utilities;
 
 @layer utilities {
-    .active1 {
-        width: 100vw;
-        height: 100vh;
-        background-color: rebeccapurple;
-        color: aliceblue;
-        display: flex;
-        text-align: center;
-        justify-content: center;
+/*  全局背景色*/
+    .bg-bgGreen {
+        --darkreader-bg--tw-bg-opacity: 1;
+        background-color: rgb(27, 43, 0);
     }
+
+ .text-secGreen {
+     --darkreader-text--tw-text-opacity: 1;
+     color: rgb(123, 194, 150);
+ }
+ .border-secGreen {
+     --darkreader-border--tw-border-opacity: 1;
+     border-color: rgb(50, 109, 72);
+ }
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    body {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+    /*book now */
+    .button:before{
+        content: '';
+        position: absolute;
+        margin-top: -8.5px;
+        margin-left: -23px;
+        background-color: #377658;
+        z-index: -1;
+        width: inherit;
+        height: inherit;
+    }
+
+
+
 }

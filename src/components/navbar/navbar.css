@@ -1,0 +1,32 @@
+/*按钮阴影*/
+.profile::before {
+    background-color: #377658;
+    margin-top: 0.25rem;
+    margin-left: 0.5rem;
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    z-index: -1;
+    transition-duration: .2s
+;
+}
+.burger-menu:before, .menu-burger:before,  .arrow-up:before {
+    content: "";
+    position: absolute;
+    margin-top: 2px;
+    margin-left: 3px;
+    width: inherit;
+    height: inherit;
+    background-color: #377658;
+    z-index: -1;
+    transition-duration: .2s;
+}
+
+.active {
+    color: #84d4a3;
+}
+
+.active:before {
+    content: "· ";
+}
