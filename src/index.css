@@ -7,6 +7,7 @@
     .bg-bgGreen {
         --darkreader-bg--tw-bg-opacity: 1;
         background-color: rgb(27, 43, 0);
+        overflow: hidden;
     }
 
  .text-secGreen {

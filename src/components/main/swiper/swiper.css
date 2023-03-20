@@ -1,0 +1,62 @@
+/**/
+.slick-slider>ul {
+    width: 125px!important;
+    margin-left: 125px!important;
+}
+
+.ant-carousel .slick-prev,
+.ant-carousel .slick-next,
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-next:hover {
+    font-size: inherit;
+    color: currentColor;
+}
+/*激活的变黑*/
+.ant-carousel .slick-dots li.slick-active button {
+    background: #000;
+    opacity: 1;
+}
+.ant-carousel .slick-dots li button{
+    background: #000;
+}
+
+
+/*swiper*/
+.swiper {
+    width: 330px;
+    height: 440px;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/*手指滚动*/
+.hand-x {
+    animation-name: swipe-x;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+}
+@keyframes swipe-x {
+    0% {
+        transform: translateX(0px);
+    }
+    25% {
+        transform: translateX(30px) rotate(10deg);
+    }
+    50% {
+        transform: translateX(0px);
+    }
+    75% {
+        transform: translateX(-30px) rotate(-10deg);
+    }
+}
