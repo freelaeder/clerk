@@ -70,8 +70,8 @@ const SwiperScreens = () => {
                                     <div
                                         className="absolute bottom-4 rounded-md right-0 left-1/2 -ml-[40%] h-16 w-[80%] border-2 border-secGreen bg-bgGreen opacity-70 ">
                                         <div className="flex h-full flex-col items-center justify-center">
-                                            <div className="name font-bold">{doctor.name}</div>
-                                            <p className="underline">Learn More</p>
+                                            <div className="name font-medium">{doctor.name}</div>
+                                            <p className="underline font-light">Learn More</p>
                                         </div>
                                     </div>
                                 </Link>
